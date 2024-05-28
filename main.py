@@ -40,7 +40,7 @@ class AttentionModel:
                 print("Horizontal ", horizontal_distance, "Vertikal ", vertical_distance)
 
                 # Determine attention based on relative positions
-                if abs(horizontal_distance) < 10 and abs(vertical_distance) < 40 :
+                if abs(horizontal_distance) < 10 and abs(vertical_distance) < 40 and abs(vertical_distance) > 20:
                     attention_state = "Attentive"
                     color = "green"
                 elif horizontal_distance > 15:
@@ -52,7 +52,7 @@ class AttentionModel:
                 elif vertical_distance > -40:
                     attention_state = "Not Attentive: Looking Up"
                     color = "red"
-                elif vertical_distance < -15:
+                elif vertical_distance < -40:
                     attention_state = "Not Attentive: Looking Down"
                     color = "red"
                 else:
