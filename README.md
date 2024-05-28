@@ -1,6 +1,4 @@
-# tech4comp Facial Expression Recognition Software
-
-t4cFER allows for real-time documentation of facial emotion expressions in webcam videos.
+# Attention Recognition Project
 
 ## License
 
